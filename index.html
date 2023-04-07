@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+	  </style>
+	  <script src="https://kit.fontawesome.com/e3132c2b49.js" crossorigin="anonymous"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper-bundle.min.css">
+	<title>Portfolio</title>
+	<link rel="website icon" type ="png" href="iconnew.png" style="height: 100%; width: 100%;">
+</head>
+<body onload="getPageContent('home')">
+	<div class="welcome">
+	<header>
+		<nav class="navbar">
+			<ul class="nav-list">
+				<li><a href="#">Home </a> </li>
+				<li><a href="#projects"> Projects </a></li>
+				<li><a href="#home" onclick="getPageContent('certificates')"> Certification </a></li>
+				<li><a href="#getInTouch"> Get in touch </a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- -----------------------designs-------------------- -->
+	<div class="img des " data-value="5"><img src="design-leaf.png" class="non"></div>
+	<div class="img-1 des "data-value="9"><img src="design-leaf-top.png" class="non"></div>
+	<div class="img-3 des "data-value="-5"><img src="design-world.png" class="non"></div>
+
+
+
+	<!-- ---------------------------cursors------------------------ -->
+
+
+	<div class="cursor"></div>
+
+	<!-- -------------------------Content------------------------ -->
+
+	<div class="main" id="home">
+
+		<h3>Hi it's <span>Nitish Mandal</span></h3>
+		<div class="changing-txt">
+			<span class="text first-text">I'm a</span>
+			<span class="text sec-text">Designer</span>
+		</div>
+		<button><span></span> Download Resume <i class="fa-solid fa-download"></i></button>
+		<div class="social-media">
+		<a href=""><i class="fa-brands fa-linkedin-in"></i></a><div class="line"></div>
+		<a href=""><i class="fa-brands fa-github"></i></a><div class="line"></div>
+		<a href=""><i class="fa-brands fa-twitter"></i></a><div class="line"></div>
+		<a href=""><i class="fa-brands fa-instagram"></i></a>
+		</div>
+
+	</div>
+	<img src="line.png" style="top: 35rem; position: absolute; width: 80%; height: 7rem; left: 10rem;" class="line-br">
+<div class="stars">
+	<img src="star.png" class="image">
+	<img src="star.png" class="image">
+	<img src="star.png" class="image">
+	<img src="star.png" class="image">
+	<img src="star.png" class="image">
+	<img src="star.png" class="image">
+	<img src="star.png" class="image">
+	<img src="star.png" class="image">
+	<img src="star.png" class="image">
+	<img src="star.png" class="image">
+	<img src="star.png" class="image">
+	<img src="star.png" class="image">
+</div>
+</div>
+
+
+<!----------------------------------SKILLS--------------------------------- -->
+<div class="skills-page">
+	<div class="skill-box">
+		<div class="skill-txt">
+			<h2>Skills</h2><hr class="skill-hr"><br>
+			<p>I have acquired following skills through working on personal projects.</p>
+		</div><br>
+		<div class="card">
+			<img src="skills-img.svg" alt="">
+			<p>HTML 5</p>
+		</div>
+		<div class="card">
+			<img src="skills-90.svg" alt="">
+			<p>CSS</p>
+		</div>
+		<div class="card">
+			<img src="skill-85.svg" alt="">
+			<p>JAVASCRIPT</p>
+		</div>
+		<!-- <div class="card">
+			<img src="skills-img.svg" alt="">
+			<p>DESIGNING</p>
+		</div> -->
+	</div>
+</div>
+<img src="line.png" style="top: 81rem; position: absolute; width: 80%; height: 7rem; left: 10rem; " class="line-br">
+
+<!-- ------------------------------------------Projects------------------------------------------ -->
+
+
+<h2 class="project-head" id="projects">Projects</h2><hr class="skill-hr">
+ <section class="hero">
+
+	<ul class="slider">
+	  <li class="slide s1"><a href=""> Search Box</a></li>
+	  <li class="slide s2"><a href="">E-Commerce</a></li>
+	</ul>
+  
+ </section>
+
+ <img src="line.png" style="top: 124rem; position: absolute; width: 80%; height: 7rem; left: 10rem;" class="line-br">
+
+<!-- --------------------------------------Contact us -------------------------------- -->
+<div class="container" id="getInTouch">
+	<div class="row">
+		<div class="col-1">
+			<img src="contactus.svg" alt="">
+		</div>
+		<div class="col-1">
+			<form action="">
+				<div class="form">
+				<input type="text" placeholder="First Name" required>
+				<input type="text" placeholder="Last Name" required><br>
+				<input type="email" placeholder="Email Address" required>
+				<input type="tel" pattern="[0-9]{10}" required placeholder="Contact No."><br><br>
+				<textarea name="" id="" cols="30" rows="10" required placeholder="Message"></textarea>
+				<button type="submit"><span></span> Submit</button>
+			</div>
+			</form>
+		
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- ---------------------------------FOOTER-------------------------------- -->
+
+<footer>
+	<div class="content">
+		<h4>Copyright &copy; 2023 all right reserved ❤️</h4>
+	</div>
+</footer>
+
+
+
+<!-- <---------------------CONTACT SECTION---------------->
+	<script>
+
+		// <----------------------SCRIPT FOR PAGES-------------------------->
+
+
+
+
+
+
+
+
+
+			// ------------------SCRIPT FOR CURSOR------------------------
+
+			const cursor =document.querySelector(".cursor");
+			var timeout;
+
+
+			document.addEventListener("mousemove", (e) =>{
+				let x =e.pageX;
+				let y =e.pageY;
+
+				cursor.style.top = y + "px";
+				cursor.style.left = x + "px";
+				cursor.style.display = "block";
+
+
+			//	-------------------Dead--------------------------------
+				function mousestopped(){
+				cursor.style.display = "none";
+				}
+				timeout = setTimeout(mousestopped,4000);
+			})
+		//		----------------MouseOut--------------------------------
+
+
+			document.addEventListener("mouseout", () => {
+				cursor.style.display = "none";
+			})
+
+		// --------------------------------Click--------------------------------
+
+		// window.addEventListener('click', event => {
+		// 	const cursor = 
+		// })
+	
+
+		
+
+
+
+		// <-------------------------------SCRIPT FOR MOVING IMAGES------------------------>
+
+			document.addEventListener("mousemove", parallax);
+			function parallax(e){
+				document.querySelectorAll(".des").forEach(function(move){
+					var moving_value = move.getAttribute("data-value");
+					var x = (e.clientX * moving_value) / 250;
+					var y = (e.clientY * moving_value) / 250;
+
+					move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+				});
+			}
+
+
+
+
+			// <-----------------------SCRIPT FOR DYNAMIC TEXT---------------------------->
+
+		const text = document.querySelector(".sec-text");
+
+		const textLoad = () => {
+			setTimeout(() => {
+				text.textContent = "Designer";
+			}, 0);
+
+			setTimeout(() => {
+				text.textContent = "Web Developer";
+			}, 4000);
+
+			setTimeout(() => {
+				text.textContent ="UI/UX Designer";
+			}, 8000);
+
+			setTimeout(() => {
+				text.textContent ="Programmer";
+			}, 12000);
+		}
+		textLoad();
+		setInterval(textLoad,16000)
+	</script>
+</body>
+</html>
